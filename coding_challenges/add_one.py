@@ -1,8 +1,16 @@
-"""Add one """
+"""
+Add one to a list of integers.
+Any integer cannot be more than 10.
 
-# [1, 2, 4] -> [ 1, 2, 5]
-# [1, 2, 9] -> [1, 3, 0]
-# [9, 9, 9] -> [1, 0, 0, 0]
+Examples:
+[1, 2, 4] -> [1, 2, 5]
+[1, 2, 9] -> [1, 3, 0]
+
+Edge cases:
+
+[9, 9, 9] -> [1, 0, 0, 0]
+[] -> []
+"""
 
 
 def add_one(given_array):

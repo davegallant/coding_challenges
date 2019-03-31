@@ -1,12 +1,16 @@
-"""Given a string, get the first recurring character."""
+"""
+Given a string, get the first recurring character.
 
-# Examples:
-# abcdea -> a
-# ddd -> d
+Examples:
 
-# Edges cases:
-# abc -> None
-# -> None
+abcdea -> a
+ddd -> d
+
+Edges cases:
+
+abc -> None
+-> None
+"""
 
 
 def get_first_recurring_char(given_array):
@@ -18,6 +22,7 @@ def get_first_recurring_char(given_array):
 
 
 assert get_first_recurring_char("abcdab") == "a"
+assert get_first_recurring_char("bbbb") == "b"
 assert get_first_recurring_char("abc") == None
 assert get_first_recurring_char("") == None
 
