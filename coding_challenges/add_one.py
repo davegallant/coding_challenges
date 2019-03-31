@@ -1,15 +1,6 @@
 """
 Add one to a list of integers.
 Any integer cannot be more than 10.
-
-Examples:
-[1, 2, 4] -> [1, 2, 5]
-[1, 2, 9] -> [1, 3, 0]
-
-Edge cases:
-
-[9, 9, 9] -> [1, 0, 0, 0]
-[] -> []
 """
 
 
@@ -34,5 +25,5 @@ assert add_one([2, 9]) == [3, 0]
 assert add_one([9]) == [1, 0]
 assert add_one([9, 9, 9]) == [1, 0, 0, 0]
 
-# This does not consider negative numbers!
+# This solution does not consider negative numbers!
 # assert add_one([-3]) == [-2]

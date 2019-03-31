@@ -7,16 +7,6 @@ be represented.
 ...
 26 -> z
 
-Examples:
-
-"1234" -> abcd, lcd, awd -> 3 ways
-"12" -> 2 ways
-"33" -> 1 way
-
-Edge cases:
-"0123" -> 0 ways
-
-
 Assumptions:
 - All characters are digits than less 10
 """

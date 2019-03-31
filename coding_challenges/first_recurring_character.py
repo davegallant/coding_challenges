@@ -1,15 +1,5 @@
 """
 Given a string, get the first recurring character.
-
-Examples:
-
-abcdea -> a
-ddd -> d
-
-Edges cases:
-
-abc -> None
--> None
 """
 
 

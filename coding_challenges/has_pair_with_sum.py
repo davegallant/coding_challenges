@@ -2,14 +2,7 @@
 Given an array of integers, determine whether there is a pair
 of integers that can match a particular sum.
 
-Examples:
-
-[1, 2, 3, 9, 12], sum_wanted=5 -> True
-
-[1, 2, 3, 9, 12], sum_wanted=6 -> False
-
 Assumptions:
-
 List is sorted.
 Sum wanted is always an integer.
 """
