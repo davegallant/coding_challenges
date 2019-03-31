@@ -1,6 +1,6 @@
 # coding_challenges
 
-A set of coding challenge solutions.
+A set of coding challenges with solutions.
 
 A brief description of the challenge, with examples, is at the top of each file.
 
