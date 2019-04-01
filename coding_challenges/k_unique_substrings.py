@@ -11,12 +11,15 @@ There are substrings with exactly 3 unique characters
 Max is "aabbcc" with length 6.
 
 "aaabbb", k = 3
-There are only two unique characters, thus show error message. 
+There are only two unique characters, thus return None.
 """
 
 
 def k_unique_substrings(given_string, k):
     if not k or not given_string:
+        return None
+    if k > len(set(given_string)):
+        # This check be moved into the for loop for performance
         return None
     current_max = 0
     window = ""
@@ -48,6 +51,7 @@ def k_unique_substrings(given_string, k):
     if len(window) > current_max:
         longest_substrings = []
         longest_substrings.append(window)
+
     return longest_substrings
 
 
@@ -59,3 +63,4 @@ assert k_unique_substrings("aabbcc", k=3) == ["aabbcc"]
 # Edge cases
 assert k_unique_substrings("", k=3) == None
 assert k_unique_substrings("abc", k=None) == None
+assert k_unique_substrings("aaabb", k=3) == None
