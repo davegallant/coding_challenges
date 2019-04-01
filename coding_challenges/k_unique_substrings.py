@@ -16,6 +16,8 @@ There are only two unique characters, thus show error message.
 
 
 def k_unique_substrings(given_string, k):
+    if not k or not given_string:
+        return None
     current_max = 0
     window = ""
     current_characters = set()
@@ -54,3 +56,6 @@ assert k_unique_substrings("aabbccc", k=1) == ["ccc"]
 assert k_unique_substrings("aaaabbccc", k=1) == ["aaaa"]
 assert k_unique_substrings("aabbcc", k=2) == ["aabb", "bbcc"]
 assert k_unique_substrings("aabbcc", k=3) == ["aabbcc"]
+# Edge cases
+assert k_unique_substrings("", k=3) == None
+assert k_unique_substrings("abc", k=None) == None
